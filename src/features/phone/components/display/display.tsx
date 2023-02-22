@@ -3,5 +3,9 @@
 
 export function Display() {
   // const { phoneNumber } = useContext(AppContext);
-  return <span className="number">NUMBER</span>;
+  return (
+    <span role={"none"} className="number">
+      NUMBER
+    </span>
+  );
 }

@@ -4,5 +4,10 @@
 export function Info() {
   //const { isCalling } = useContext(AppContext);
 
-  return <span className="message"> Calling...</span>;
+  return (
+    <span role={"none"} className="message">
+      {" "}
+      Calling...
+    </span>
+  );
 }
