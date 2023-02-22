@@ -1,5 +1,4 @@
-import { screen } from "@testing-library/react";
-import { render } from "@testing-library/react";
+import { screen, render } from "@testing-library/react";
 import { Info } from "./info";
 describe("Given App component", () => {
   describe("When it is rendered", () => {

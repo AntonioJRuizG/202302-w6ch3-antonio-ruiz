@@ -1,8 +1,4 @@
-//import { useContext } from "react";
-
 export function Keyboard() {
-  // const { handlerClick, handlerClickDelete } = useContext(AppContext);
-
   return (
     <>
       <li>

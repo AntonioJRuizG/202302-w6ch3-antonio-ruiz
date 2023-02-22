@@ -5,7 +5,6 @@ import { Info } from "../../../features/phone/components/info/info";
 import { Keyboard } from "../../../features/phone/components/keyboard/keyboard";
 
 import App from "./App";
-// import { store } from "../../store/store";
 
 jest.mock("../../../features/phone/components/actions/actions");
 jest.mock("../../../features/phone/components/display/display");
