@@ -1,8 +1,8 @@
-import { useContext } from "react";
-import { AppContext } from "../../../core/context/app.context";
+//import { useContext } from "react";
+//import { AppContext } from "../../../core/context/app.context";
 
 export function Info() {
-  const { isCalling } = useContext(AppContext);
+  //const { isCalling } = useContext(AppContext);
 
-  return <span className="message"> {isCalling ? "Calling..." : "..."}</span>;
+  return <span className="message"> Calling...</span>;
 }
