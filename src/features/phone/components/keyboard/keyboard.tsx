@@ -1,41 +1,67 @@
+import { useDispatch } from "react-redux";
+import { AppDispatch } from "../../../../core/store/store";
+import { addCreator, deleteCreator } from "../../reducer/phone.action.creator";
+
 export function Keyboard() {
+  const dispatch = useDispatch<AppDispatch>();
+
+  // Refactoring of the code below please
   return (
     <>
       <li>
-        <button className="key">
-          {/* <button className="key" onClick={() => handlerClick("1")} disabled={handleCall}> */}
+        <button className="key" onClick={() => dispatch(addCreator("1"))}>
           1
         </button>
       </li>
       <li>
-        <button className="key">2</button>
+        <button className="key" onClick={() => dispatch(addCreator("2"))}>
+          2
+        </button>
       </li>
       <li>
-        <button className="key">3</button>
+        <button className="key" onClick={() => dispatch(addCreator("3"))}>
+          3
+        </button>
       </li>
       <li>
-        <button className="key">4</button>
+        <button className="key" onClick={() => dispatch(addCreator("4"))}>
+          4
+        </button>
       </li>
       <li>
-        <button className="key">5</button>
+        <button className="key" onClick={() => dispatch(addCreator("5"))}>
+          5
+        </button>
       </li>
       <li>
-        <button className="key">6</button>
+        <button className="key" onClick={() => dispatch(addCreator("6"))}>
+          6
+        </button>
       </li>
       <li>
-        <button className="key">7</button>
+        <button className="key" onClick={() => dispatch(addCreator("7"))}>
+          7
+        </button>
       </li>
       <li>
-        <button className="key">8</button>
+        <button className="key" onClick={() => dispatch(addCreator("8"))}>
+          8
+        </button>
       </li>
       <li>
-        <button className="key">9</button>
+        <button className="key" onClick={() => dispatch(addCreator("9"))}>
+          9
+        </button>
       </li>
       <li>
-        <button className="key">0</button>
+        <button className="key" onClick={() => dispatch(addCreator("0"))}>
+          0
+        </button>
       </li>
       <li>
-        <button className="key big">delete</button>
+        <button className="key big" onClick={() => dispatch(deleteCreator())}>
+          delete
+        </button>
       </li>
     </>
   );
