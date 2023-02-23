@@ -8,7 +8,7 @@ export const phoneReducer = createReducer(initialState, (builder) => {
   // Imprescindible usar siempre addDefaultCase, Si no se añade default, y al disparar los reducers no lo encuentra, saltaria error.
   builder.addCase(ac.addCreator, (state, { payload }) => state + payload);
 
-  builder.addCase(ac.deleteCreator, (state) => (state = ""));
+  builder.addCase(ac.deleteCreator, (state) => initialState);
 
   builder.addDefaultCase((state) => state); // En caso de error devuelve el mismo estado
 });
